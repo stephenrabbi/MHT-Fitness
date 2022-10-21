@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHT fitness</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+     
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .wow:first-child {
+          visibility: visible;
+        }
+      </style>
+
+</head>
+<body>
+    
+<!-- header section starts -->
+
+<header class="header">
+
+    <a href="contact.html" class="logo"> <img src="images/logo-MHT.jpg"></a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>       
+        <a href="pricing.html">Pricing</a>
+        <a href="Trainers.html">Trainers</a>
+        <a href="Book-Now.html">Book A Section</a>
+        <a href="contact.html">Contact Us</a>
+
+
+    </nav>
+
+</header>
+
+<div class="container">
+<label for="aptime">Schedule an appointment (date and time)</label>
+  		<input type="datetime-local" id="aptime" name="appt">
+  		<br>
+    </div>
+
+
+
+<div class="formbold-main-wrapper">
+
+  <div class="container">
+    <label for="aptime">Schedule an appointment (date and time)</label>
+          <input type="datetime-local" id="aptime" name="appt">
+          <br>
+        </div>
+        
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="formbold-form-wrapper">
+      <form action="https://formbold.com/s/FORM_ID" method="POST">
+        <div class="formbold-mb-5">
+          <label for="name" class="formbold-form-label"> Full Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            class="formbold-form-input"
+          />
+        </div>
+        <div class="formbold-mb-5">
+          <label for="phone" class="formbold-form-label"> Phone Number </label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+            class="formbold-form-input"
+          />
+        </div>
+        <div class="formbold-mb-5">
+          <label for="email" class="formbold-form-label"> Email Address </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            class="formbold-form-input"
+          />
+        </div>
+        <div class="flex flex-wrap formbold--mx-3">
+          <div class="w-full sm:w-half formbold-px-3">
+            <div class="formbold-mb-5 w-full">
+              <label for="date" class="formbold-form-label"> Date </label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                class="formbold-form-input"
+              />
+            </div>
+          </div>
+          <div class="w-full sm:w-half formbold-px-3">
+            <div class="formbold-mb-5">
+              <label for="time" class="formbold-form-label"> Time </label>
+              <input
+                type="time"
+                name="time"
+                id="time"
+                class="formbold-form-input"
+              />
+            </div>
+          </div>
+        </div>
+  
+        <div class="formbold-mb-5 formbold-pt-3">
+          <label class="formbold-form-label formbold-form-label-2">
+            Address Details
+          </label>
+          <div class="flex flex-wrap formbold--mx-3">
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <input
+                  type="text"
+                  name="area"
+                  id="area"
+                  placeholder="Enter area"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="Enter city"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="Enter state"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <input
+                  type="text"
+                  name="post-code"
+                  id="post-code"
+                  placeholder="Post Code"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div>
+          <button class="formbold-btn">Book Appointment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Inter", Arial, Helvetica, sans-serif;
+    }
+    .formbold-mb-5 {
+      margin-bottom: 20px;
+    }
+    .formbold-pt-3 {
+      padding-top: 12px;
+    }
+    .formbold-main-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px;
+    }
+  
+    .formbold-form-wrapper {
+      margin: 0 auto;
+      max-width: 550px;
+      width: 100%;
+      background: white;
+    }
+    .formbold-form-label {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      color: #07074d;
+      margin-bottom: 12px;
+    }
+    .formbold-form-label-2 {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .formbold-form-input {
+      width: 100%;
+      padding: 12px 24px;
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+      background: white;
+      font-weight: 500;
+      font-size: 16px;
+      color: #6b7280;
+      outline: none;
+      resize: none;
+    }
+    .formbold-form-input:focus {
+      border-color: #6a64f1;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    }
+  
+    .formbold-btn {
+      text-align: center;
+      font-size: 16px;
+      border-radius: 6px;
+      padding: 14px 32px;
+      border: none;
+      font-weight: 600;
+      background-color: #6a64f1;
+      color: white;
+      width: 100%;
+      cursor: pointer;
+    }
+    .formbold-btn:hover {
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    }
+  
+    .formbold--mx-3 {
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+    .formbold-px-3 {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .flex {
+      display: flex;
+    }
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    .w-full {
+      width: 100%;
+    }
+    @media (min-width: 540px) {
+      .sm\:w-half {
+        width: 50%;
+      }
+    }
+  </style>
+
+<h1 class="heading"> <span>Quick links</span> </h1>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="links" href="index.html">home</a>
+            <a class="links" href="about.html">about</a>           
+            <a class="links" href="pricing.html">pricing</a>
+            <a class="links" href="trainers.html">trainers</a>
+            <a class="links" href="contact.html">Contact Us</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p> monday : <i> 7:00am - 10:30pm </i> </p>
+            <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
+            <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
+            <p> friday : <i> 7:00am - 10:30pm </i> </p>
+            <p> saturday : <i> 7:00am - 10:30pm </i> </p>
+            <p> sunday : <i> 7:00am - 10:30pm</i> </p>
+        </div>
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p> <i class="fas fa-phone"></i> +971547988404 </p>
+            <p> <i class="fas fa-phone"></i> +971547988405 </p>
+            <p> <i class="fas fa-envelope"></i> mht@gmail.com </p>
+            <p> <i class="fas fa-map"></i> Aubudabi, Dubia - 400104 </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" class="email" placeholder="enter your email" id="">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit"> <span>MHT 2022</span> | all rights reserved! </div>
+
+<!-- footer section ends -->
+
+
+
+<!-- jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+      $(".ham-burger, .nav ul li a").click(function(){
+       
+        $(".nav").toggleClass("open")
+
+        $(".ham-burger").toggleClass("active");
+      })      
+      $(".accordian-container").click(function(){
+      	$(".accordian-container").children(".body").slideUp();
+      	$(".accordian-container").removeClass("active")
+      	$(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+      	$(this).children(".body").slideDown();
+      	$(this).addClass("active")
+      	$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+      })
+
+       $(".nav ul li a, .go-down").click(function(event){
+         if(this.hash !== ""){
+
+              event.preventDefault();
+
+              var hash=this.hash; 
+
+              $('html,body').animate({
+                scrollTop:$(hash).offset().top
+              },800 , function(){
+                 window.location.hash=hash;
+              });
+
+              // add active class in navigation
+              $(".nav ul li a").removeClass("active")
+              $(this).addClass("active")
+         }
+      })
+})
+
+</script>
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       0,
+      }
+    );
+    wow.init();
+  </script>
+
+</body>
+</html>

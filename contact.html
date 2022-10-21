@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIHT fitness</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+
+    <style>
+      .wow:first-child {
+        visibility: visible;
+      }
+    </style>
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+      var _smartsupp = _smartsupp || {};
+      _smartsupp.key = "12a610f8471c0f481a8d3e4f0407520b46857617";
+      window.smartsupp ||
+        (function (d) {
+          var s,
+            c,
+            o = (smartsupp = function () {
+              o._.push(arguments);
+            });
+          o._ = [];
+          s = d.getElementsByTagName("script")[0];
+          c = d.createElement("script");
+          c.type = "text/javascript";
+          c.charset = "utf-8";
+          c.async = true;
+          c.src = "https://www.smartsuppchat.com/loader.js?";
+          s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+  </head>
+  <body>
+    <!-- header section starts -->
+
+    <header class="header">
+      <a href="index.html" class="logo"> <img src="images/er.png" /></a>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="Trainers.html">Trainers</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- header section ends     -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/CF-1.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>be strong, be fit</span>
+              <h3>Make yourself stronger than your excuses.</h3>
+              <a href="contact.html" class="btn">get started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Contact -->
+    <h1 class="heading"><span>Contact Us/Booking</span></h1>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="content">
+          <div class="box form wow slideInLeft , appointment">
+            <form>
+              <input type="text" placeholder="Enter Name" />
+              <input type="text" placeholder="Enter Email" />
+              <input type="text" placeholder="Enter Mobile" />
+
+              <label for="aptime"
+                ><h3 class="appointment">
+                  Book an appointment (date and time)
+                </h3></label
+              >
+              <input type="datetime-local" id="aptime" name="appt" />
+              <br />
+
+              <label for="fit"
+                ><h3 class="appointment">
+                  What is your fitness level (between 0 and 10)
+                </h3></label
+              >
+              <input type="range" id="fit" name="fit" min="0" max="10" />
+
+              <label for="fit"
+                ><h3 class="appointment">Select class type</h3></label
+              >
+
+              <section
+                class="checkbox"
+                class="checkbox-inline"
+                id="mycheckbox"
+                class="appointment"
+              >
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="remember"
+                    id="remember"
+                    value="is checked"
+                    checked
+                  />
+                  <label for="remember" class="checkbox">Private Class</label>
+
+                  <input
+                    type="checkbox"
+                    name="privacy"
+                    id="terms"
+                    value="terms accepted"
+                  />
+                  <label for="terms" class="checkbox">Group self defense</label>
+
+                  <input
+                    type="checkbox"
+                    name="privacy"
+                    id="term"
+                    value="terms accepted"
+                  />
+                  <label for="terms" class="checkbox">Group fitness</label>
+
+                  <input
+                    type="checkbox"
+                    name="privacy"
+                    id="ter"
+                    value="terms accepted"
+                  />
+                  <label for="terms" class="checkbox">Group boxing</label>
+
+                  <input
+                    type="checkbox"
+                    name="privacy"
+                    id="termss"
+                    value="terms accepted"
+                  />
+                  <label for="terms" class="checkbox">Group yoga</label>
+                </div>
+              </section>
+
+              <label for="fit"
+                ><h3 class="appointment">Who is taking the class?</h3></label
+              >
+              <br />
+
+              <select name="food" id="food">
+                <optgroup label="Group yoga">
+                  <option value="palak">Class for adults</option>
+                  <option value="biryani">class for kids</option>
+                </optgroup>
+
+                <optgroup label="Group boxing">
+                  <option value="tacos">class for adults</option>
+                  <option value="burrito">class for kids</option>
+                </optgroup>
+
+                <optgroup label="Group fitness">
+                  <option value="ramen">class for adults</option>
+                  <option value="sushi">class for kids</option>
+                </optgroup>
+
+                <optgroup label="Group self defense">
+                  <option value="ramen">class for adults</option>
+                  <option value="sushi">class for kids</option>
+                </optgroup>
+              </select>
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <textarea placeholder="Enter Message"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="box text wow slideInRight">
+            <h2>Get Connected with Gym</h2>
+            <h2>Book your class Today!</h2>
+            <p class="title-p">
+              You can get in touch with us anytime , anyday as we will be
+              pleased to wilcome you always!
+            </p>
+            <div class="info">
+              <ul>
+                <li>
+                  <span class="fa fa-map-marker"></span> Hydra tower Al reem
+                  island Abu Dhabi UAE
+                </li>
+                <li><span class="fa fa-phone"></span> +971547988404</li>
+                <li><span class="fa fa-envelope"></span> info@mht.com</li>
+              </ul>
+            </div>
+            <div class="social">
+              <a href=""><span class="fa fa-facebook"></span></a>
+              <a href=""><span class="fa fa-linkedin"></span></a>
+              <a href=""><span class="fa fa-skype"></span></a>
+              <a href=""><span class="fa fa-youtube-play"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="links" href="index.html">home</a>
+          <a class="links" href="about.html">about</a>
+          <a class="links" href="pricing.html">pricing</a>
+          <a class="links" href="trainers.html">trainers</a>
+          <a class="links" href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p>monday : <i> 7:00am - 10:30pm </i></p>
+          <p>tuesday : <i> 7:00am - 10:30pm </i></p>
+          <p>wednesday : <i> 7:00am - 10:30pm </i></p>
+          <p>friday : <i> 7:00am - 10:30pm </i></p>
+          <p>saturday : <i> 7:00am - 10:30pm </i></p>
+          <p>sunday : <i> 7:00am - 10:30pm </i></p>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p><i class="fas fa-phone"></i> +971547988404</p>
+          <p><i class="fas fa-phone"></i> +971547988405</p>
+          <p><i class="fas fa-envelope"></i> mht@gmail.com</p>
+          <p>
+            <i class="fas fa-map"></i> Hydra tower Al reem island Abu Dhabi UAE
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              class="email"
+              placeholder="enter your email"
+              id=""
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="credit"><span>MHT 2022</span> | all rights reserved!</div>
+
+    <!-- footer section ends -->
+
+    <!-- jquery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".ham-burger, .nav ul li a").click(function () {
+          $(".nav").toggleClass("open");
+
+          $(".ham-burger").toggleClass("active");
+        });
+        $(".accordian-container").click(function () {
+          $(".accordian-container").children(".body").slideUp();
+          $(".accordian-container").removeClass("active");
+          $(".accordian-container")
+            .children(".head")
+            .children("span")
+            .removeClass("fa-angle-down")
+            .addClass("fa-angle-up");
+          $(this).children(".body").slideDown();
+          $(this).addClass("active");
+          $(this)
+            .children(".head")
+            .children("span")
+            .removeClass("fa-angle-up")
+            .addClass("fa-angle-down");
+        });
+
+        $(".nav ul li a, .go-down").click(function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $("html,body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+
+            // add active class in navigation
+            $(".nav ul li a").removeClass("active");
+            $(this).addClass("active");
+          }
+        });
+      });
+    </script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        animateClass: "animated",
+        offset: 0,
+      });
+      wow.init();
+    </script>
+    <!-- whatsApp Number Starts link  -->
+
+    <script type="text/javascript">
+      (function () {
+        var options = {
+          whatsapp: "+971504415217", // WhatsApp number
+          call_to_action: "Message us", // Call to action
+          position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol,
+          host = "getbutton.io",
+          url = proto + "//static." + host;
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = url + "/widget-send-button/js/init.js";
+        s.onload = function () {
+          WhWidgetSendButton.init(host, proto, options);
+        };
+        var x = document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      })();
+    </script>
+    <!-- whatsApp Number End link  -->
+  </body>
+</html>
